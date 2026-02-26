@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="SSDT">
+      <UniqueIdentifier>{7b0597dd-5840-4010-8eda-f26a456fe1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SSDT\BASE_TABLE">
+      <UniqueIdentifier>{f690f890-2d51-4084-a9f0-e4968f8d3324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SSDT\SSDT_HOOK">
+      <UniqueIdentifier>{566b9809-fb54-4165-aade-8e7d9976e836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SSDT\PAGE_CR0_DISABLE">
+      <UniqueIdentifier>{bb69d537-bb34-4b5c-80ab-193baa4aec76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SSDT\SSDT_NEW_FUN">
+      <UniqueIdentifier>{1960b521-67a5-436a-92cf-7a9befc2e9b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SSDT\DISABLE_PG">
+      <UniqueIdentifier>{ef44af20-06a0-40a3-a7bb-338f33f529dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VirtualizationTechnology">
+      <UniqueIdentifier>{48b23fef-6c70-4184-8714-86d7d6a5f933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HIDE">
+      <UniqueIdentifier>{57ea31c7-1848-4137-b8bc-46aefe47c6b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HIDE\HideProcess">
+      <UniqueIdentifier>{97321c6a-77dd-48b3-9140-804c17f5fbd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SSDT\DISABLE_PG\DisablePatchGuard">
+      <UniqueIdentifier>{d27d3a2f-df61-42e9-ba13-d469bd2c2e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoadImage">
+      <UniqueIdentifier>{fbe7d777-1fa2-4004-9000-8bdf9e1e9c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Encrypt">
+      <UniqueIdentifier>{3756d747-f20d-41c0-a7df-92d095073ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SSDT\SSDT_HOOK\hBuffer">
+      <UniqueIdentifier>{7aa2b01d-e2fb-4867-84eb-c8870a9ebb9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HIDE\HideDriver">
+      <UniqueIdentifier>{69fc0932-f5e6-4cea-a38c-4100243b81f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TCP">
+      <UniqueIdentifier>{cf01bb34-0537-4108-b44d-49927edae1b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SSDT\PhysicalMemory">
+      <UniqueIdentifier>{397cb3a1-8171-466e-879f-f84319b3f679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MactionCode">
+      <UniqueIdentifier>{f5c09e38-04f7-4127-b331-5eedca8f8a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="infinity_hook">
+      <UniqueIdentifier>{5980f458-86da-4179-982b-bddc4cc179f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="infinity_hook\hde">
+      <UniqueIdentifier>{dc2dae68-a69f-4aa1-b4ca-f2475524e815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ByPg">
+      <UniqueIdentifier>{30c0f2b4-9037-452e-9438-d61b484a1ad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ByPg\NT">
+      <UniqueIdentifier>{c4b73930-8564-49e0-b825-dd1df08b9d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SandBox">
+      <UniqueIdentifier>{c70b9ec2-3dd4-4aa5-aac2-9c3e16ebe6e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Except">
+      <UniqueIdentifier>{a47aa5f8-c42b-48ca-97fe-660f6435aeb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{fff52818-e5c3-41f1-a993-7ee834b150c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KsSocket">
+      <UniqueIdentifier>{6393be50-4003-45c3-9369-11721e29a42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PELoader">
+      <UniqueIdentifier>{739a27fe-0e61-41d1-83d8-25e9078988e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KsSerial">
+      <UniqueIdentifier>{7f04db2c-983d-4e37-a43a-646839dce5fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FilterIoControl">
+      <UniqueIdentifier>{7e82b689-401d-4614-9040-21960465e8c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\PAGE_PROTECT">
+      <UniqueIdentifier>{b04b4cb2-c9ef-4523-aad7-5b1b162dfd5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detours">
+      <UniqueIdentifier>{9f1a3a4a-de7b-439e-924d-4167a3e78191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detours\detours">
+      <UniqueIdentifier>{c9ec9a48-e8f0-42cb-9c49-de3e4d08a9b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ByPg\ByPG2024.4">
+      <UniqueIdentifier>{f8a9f150-5e3e-476f-ae33-f8c87b8fc5e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shark">
+      <UniqueIdentifier>{f4a4642a-5c04-4655-a481-7a1e66980919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shark\PgClear">
+      <UniqueIdentifier>{5f915fb4-69f4-486a-85f3-693b21dd4f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KPE">
+      <UniqueIdentifier>{4625a5c0-6e73-4c9e-8414-2c931fc10354}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QLoveDriver.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PAGE_CR0_DISABLE.c">
+      <Filter>SSDT\PAGE_CR0_DISABLE</Filter>
+    </ClCompile>
+    <ClCompile Include="SSDT_NEW_FUN.c">
+      <Filter>SSDT\SSDT_NEW_FUN</Filter>
+    </ClCompile>
+    <ClCompile Include="Hide.c">
+      <Filter>HIDE\HideProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="BASE_TABLE.c">
+      <Filter>SSDT\BASE_TABLE</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadImage.c">
+      <Filter>LoadImage</Filter>
+    </ClCompile>
+    <ClCompile Include="BrotherEncrypt.c">
+      <Filter>Encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="SSDT_HOOK.c">
+      <Filter>SSDT\SSDT_HOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleHide.c">
+      <Filter>HIDE\HideProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="TCP.c">
+      <Filter>TCP</Filter>
+    </ClCompile>
+    <ClCompile Include="DISABLE_PATHGUARD.c">
+      <Filter>SSDT\DISABLE_PG\DisablePatchGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicalMemory.c">
+      <Filter>SSDT\PhysicalMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineCode.c">
+      <Filter>MactionCode</Filter>
+    </ClCompile>
+    <ClCompile Include="infinity_hook\hde\hde64.cpp">
+      <Filter>infinity_hook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="infinity_hook\hook.cpp">
+      <Filter>infinity_hook</Filter>
+    </ClCompile>
+    <ClCompile Include="KSandBox.c">
+      <Filter>SandBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Except.cpp">
+      <Filter>Header Files\Except</Filter>
+    </ClCompile>
+    <ClCompile Include="MSG_SOCKET.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KsSocket\berkeley.c">
+      <Filter>KsSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="KsSocket\ksocket.c">
+      <Filter>KsSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="KServer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PELoader.c">
+      <Filter>PELoader</Filter>
+    </ClCompile>
+    <ClCompile Include="KsSerial.c">
+      <Filter>KsSerial</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterDriverIo.c">
+      <Filter>FilterIoControl</Filter>
+    </ClCompile>
+    <ClCompile Include="PE\kPE.c">
+      <Filter>KPE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BASE_TABLE.h">
+      <Filter>SSDT\BASE_TABLE</Filter>
+    </ClInclude>
+    <ClInclude Include="SSDT_HOOK.h">
+      <Filter>SSDT\SSDT_HOOK</Filter>
+    </ClInclude>
+    <ClInclude Include="PAGE_CR0_DISABLE.h">
+      <Filter>SSDT\PAGE_CR0_DISABLE</Filter>
+    </ClInclude>
+    <ClInclude Include="gGlobal.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hide.h">
+      <Filter>HIDE\HideProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadImage.h">
+      <Filter>LoadImage</Filter>
+    </ClInclude>
+    <ClInclude Include="BrotherEncrypt.h">
+      <Filter>Encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="HideDriver.h">
+      <Filter>HIDE\HideDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="GET_MIPROCESSLOADERENTRY.h">
+      <Filter>HIDE\HideProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="HandleHide.h">
+      <Filter>HIDE\HideProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="TCP.h">
+      <Filter>TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="DISABLE_PATHGUARD.h">
+      <Filter>SSDT\DISABLE_PG\DisablePatchGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="SSDT_NEW_FUN.h">
+      <Filter>SSDT\SSDT_NEW_FUN</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicalMemory.h">
+      <Filter>SSDT\PhysicalMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineCode.h">
+      <Filter>MactionCode</Filter>
+    </ClInclude>
+    <ClInclude Include="infinity_hook\hde\hde64.h">
+      <Filter>infinity_hook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="infinity_hook\hde\pstdint.h">
+      <Filter>infinity_hook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="infinity_hook\hde\table64.h">
+      <Filter>infinity_hook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="infinity_hook\headers.hpp">
+      <Filter>infinity_hook</Filter>
+    </ClInclude>
+    <ClInclude Include="infinity_hook\hook.hpp">
+      <Filter>infinity_hook</Filter>
+    </ClInclude>
+    <ClInclude Include="infinity_hook\imports.hpp">
+      <Filter>infinity_hook</Filter>
+    </ClInclude>
+    <ClInclude Include="infinity_hook\utils.hpp">
+      <Filter>infinity_hook</Filter>
+    </ClInclude>
+    <ClInclude Include="KSandBox.h">
+      <Filter>SandBox</Filter>
+    </ClInclude>
+    <ClInclude Include="Except.h">
+      <Filter>Header Files\Except</Filter>
+    </ClInclude>
+    <ClInclude Include="MSG_SOCKET.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KsSocket\berkeley.h">
+      <Filter>KsSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="KsSocket\ksocket.h">
+      <Filter>KsSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="PELoader.h">
+      <Filter>PELoader</Filter>
+    </ClInclude>
+    <ClInclude Include="KsSerial.h">
+      <Filter>KsSerial</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterDriverIo.h">
+      <Filter>FilterIoControl</Filter>
+    </ClInclude>
+    <ClInclude Include="DEBUG_LOG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cdetours.h">
+      <Filter>detours\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="KServer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="PE\KPE.h">
+      <Filter>KPE</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="Arch\x64\x64.asm">
+      <Filter>VirtualizationTechnology</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

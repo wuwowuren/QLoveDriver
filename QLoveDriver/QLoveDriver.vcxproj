@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B90ECDBA-2055-45BD-9ED0-C6FA3D4C3EE9}</ProjectGuid>
+    <TemplateGuid>{dd38f7fc-d7bd-488b-9242-7d8754cde80d}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration>Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+    <RootNamespace>QLoveDriver</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <EnableASAN>false</EnableASAN>
+    <Driver_SpectreMitigation>Spectre</Driver_SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <DriverTargetPlatform>
+    </DriverTargetPlatform>
+    <Driver_SpectreMitigation>Spectre</Driver_SpectreMitigation>
+    <ValidationVersion>10.0.17763</ValidationVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <EnableInf2cat>false</EnableInf2cat>
+    <IncludePath>$(CRT_IncludePath);$(KM_IncludePath);$(KIT_SHARED_IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib\shark;$(SolutionDir)QLoveDriver\Lib\amd64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)Lib\AMD64;$(LibraryPath)</LibraryPath>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <TimeStampServer>
+    </TimeStampServer>
+    <IncludePath>$(CRT_IncludePath);$(KM_IncludePath);$(KIT_SHARED_IncludePath)</IncludePath>
+    <EnableInf2cat>false</EnableInf2cat>
+    <LibraryPath>H:\QLoveDriver\Lib\amd64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)Lib\AMD64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>DEBUG;UNICODE;_UNICODE;_AMD64_;NTOS_KERNEL_RUNTIME;_NTDRIVER_;DETOURS_X64;DETOURS_64BIT;_WIN64;NDIS_SUPPORT_NDIS6;USE_NT_MSG_NO;INITGUID;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4748;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <CompileAs>Default</CompileAs>
+      <WarningLevel>Level3</WarningLevel>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+    </ClCompile>
+    <Link>
+      <EntryPointSymbol>GsDriverEntry</EntryPointSymbol>
+      <AdditionalDependencies>detours.lib;ntoskrnl.lib;ndis.lib;fwpkclnt.lib;uuid.lib;Netio.lib;user32.lib;Shark.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+    </Link>
+    <PostBuildEvent>
+      <Command> xcopy /y /d  "$(OutDir)$(TargetName.Replace(' ','')).sys"  "M:\SignInwow_DXZZ11.0.2.56513\SignIn\res"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>NDIS_SUPPORT_NDIS6;RELOAD_IMAGE_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4603;4627;4986;4987;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>detours.lib;ntoskrnl.lib;ndis.lib;fwpkclnt.lib;uuid.lib;Netio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d  "$(OutDir)$(TargetName.Replace(' ','')).sys"  "M:\SignInwow_DXZZ11.0.2.56513\SignIn\res"</Command>
+      <Message>xcopy /y /d  "$(OutDir)$(TargetName.Replace(' ','')).sys"  "H:\SignInwow_DXZZ11.0.2.56513\SignIn\res"</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <FilesToPackage Include="$(TargetPath)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BASE_TABLE.c" />
+    <ClCompile Include="BrotherEncrypt.c" />
+    <ClCompile Include="DISABLE_PATHGUARD.c" />
+    <ClCompile Include="Except.cpp" />
+    <ClCompile Include="FilterDriverIo.c" />
+    <ClCompile Include="HandleHide.c" />
+    <ClCompile Include="Hide.c" />
+    <ClCompile Include="infinity_hook\hde\hde64.cpp" />
+    <ClCompile Include="infinity_hook\hook.cpp" />
+    <ClCompile Include="KSandBox.c" />
+    <ClCompile Include="KServer.c" />
+    <ClCompile Include="KsSerial.c" />
+    <ClCompile Include="KsSocket\berkeley.c" />
+    <ClCompile Include="KsSocket\ksocket.c" />
+    <ClCompile Include="LoadImage.c" />
+    <ClCompile Include="MachineCode.c" />
+    <ClCompile Include="MSG_SOCKET.c" />
+    <ClCompile Include="PAGE_CR0_DISABLE.c" />
+    <ClCompile Include="PELoader.c" />
+    <ClCompile Include="PE\kPE.c" />
+    <ClCompile Include="PhysicalMemory.c" />
+    <ClCompile Include="QLoveDriver.c" />
+    <ClCompile Include="SSDT_HOOK.c" />
+    <ClCompile Include="SSDT_NEW_FUN.c" />
+    <ClCompile Include="TCP.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BASE_TABLE.h" />
+    <ClInclude Include="BrotherEncrypt.h" />
+    <ClInclude Include="cdetours.h" />
+    <ClInclude Include="DEBUG_LOG.h" />
+    <ClInclude Include="DISABLE_PATHGUARD.h" />
+    <ClInclude Include="Except.h" />
+    <ClInclude Include="FilterDriverIo.h" />
+    <ClInclude Include="GET_MIPROCESSLOADERENTRY.h" />
+    <ClInclude Include="gGlobal.h" />
+    <ClInclude Include="HandleHide.h" />
+    <ClInclude Include="Hide.h" />
+    <ClInclude Include="HideDriver.h" />
+    <ClInclude Include="infinity_hook\hde\hde64.h" />
+    <ClInclude Include="infinity_hook\hde\pstdint.h" />
+    <ClInclude Include="infinity_hook\hde\table64.h" />
+    <ClInclude Include="infinity_hook\headers.hpp" />
+    <ClInclude Include="infinity_hook\hook.hpp" />
+    <ClInclude Include="infinity_hook\imports.hpp" />
+    <ClInclude Include="infinity_hook\utils.hpp" />
+    <ClInclude Include="KSandBox.h" />
+    <ClInclude Include="KServer.h" />
+    <ClInclude Include="KsSerial.h" />
+    <ClInclude Include="KsSocket\berkeley.h" />
+    <ClInclude Include="KsSocket\ksocket.h" />
+    <ClInclude Include="LoadImage.h" />
+    <ClInclude Include="MachineCode.h" />
+    <ClInclude Include="MSG_SOCKET.h" />
+    <ClInclude Include="PAGE_CR0_DISABLE.h" />
+    <ClInclude Include="PELoader.h" />
+    <ClInclude Include="PE\KPE.h" />
+    <ClInclude Include="PhysicalMemory.h" />
+    <ClInclude Include="SSDT_HOOK.h" />
+    <ClInclude Include="SSDT_NEW_FUN.h" />
+    <ClInclude Include="TCP.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="Arch\x64\x64.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
